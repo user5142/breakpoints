@@ -1,0 +1,155 @@
+/* Universal */
+
+/* 
+Google Fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+h1, h2, h3, p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.year {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.title-home {
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+a {
+    color: #16A2F9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4DB6F7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.logo:hover {
+    opacity: .75;
+}
+
+/* Articles Container */
+
+.articles-container {
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
+    gap: 2rem;
+    width: 35rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Blog Posts */
+
+.blog-post {
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
+    gap: 2rem;
+    width: 42rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.date, .author {
+    text-align: center;
+    color: #696969;
+}
+
+h3.blog-title {
+    text-align: center;
+}
+
+span {
+    display: inline;
+    font-family: 'Lucida Console', monospace;
+    font-size: .85rem;
+    font-weight: 500;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 0.3rem 0.4rem 0.1rem;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+pre {
+    text-align: left;
+    white-space: pre-line;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    line-height: 1.2;
+    padding: 0.5rem 0.75rem;
+    overflow: auto;
+}
+
+code {
+    display: inline;
+    font-family: 'Lucida Console', monospace;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    padding-top: 8rem;
+}
+
+.footer-home {
+    margin-top: 25rem;
+}
+
+.copyright {
+    color: #696969;
+}
