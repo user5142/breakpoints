@@ -8,7 +8,7 @@ font-family: 'Work Sans', sans-serif;
 */
 
 h1, h2, h3, p {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Arial';
 }
 
 h1 {
@@ -17,6 +17,7 @@ h1 {
 }
 
 .year {
+    font-size: 1.5rem;
     font-weight: normal;
 }
 
