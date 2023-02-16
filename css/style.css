@@ -91,13 +91,8 @@ header {
     margin: 0 auto;
 }
 
-.date, .author {
-    text-align: center;
+.author-card p {
     color: #696969;
-}
-
-h3.blog-title {
-    text-align: center;
 }
 
 span {
