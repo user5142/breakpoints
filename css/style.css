@@ -141,6 +141,10 @@ header ul li a:hover {
     width: 2.5rem;
 }
 
+.author-image img {
+    max-width: 100%;
+}
+
 .author-info p {
     font-size: .8rem;
 }
