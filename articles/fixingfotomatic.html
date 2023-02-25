@@ -3,26 +3,29 @@
     <head>
         <title>breakpoints</title>
         <link rel="icon" type="image/x-icon" href="https://user5142.github.io/breakpoints/images/breakpoints-favicon.png">
-        <link rel="stylesheet" href="https://user5142.github.io/breakpoints/css/reset.css">
-        <link rel="stylesheet" href="https://user5142.github.io/breakpoints/css/style.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <meta charset="UTF-8">
-    </head>
+    </head> 
 
     <body>
         <!-- Header -->
         <header>
             <a href="https://breakpoints.dev/"><img class="logo" src="https://user5142.github.io/breakpoints/images/breakpoints-logo.svg"></a>
+            <ul>
+                <li><a href="https://breakpoints.dev/">Articles</a></li>
+                <li><a href="#">About</a></li>
         </header>
 
         <!-- Blog Post -->
         <div class="blog-post">
-            <h3 class="blog-title">Fixing Fotomatic</h3>
+            <h1 class="blog-title">Fixing Fotomatic</h1>
             <div class="author-card">
                 <p>Published: 02.08.2023</p>
                 <p>Written by: Ben Hatch</p>
             </div>
-            <h1>Overview</h1>
+            <h2>Overview</h2>
             <p>This article provides an approach and step-by-step solution to Fotomatic, an off-platform project that I completed as part of Codecademy’s <a href="https://www.codecademy.com/career-journey/full-stack-engineer" target="_blank">Full Stack Software Engineer Career Path</a>.</p>
             <p>The task for this project was to fix a broken version of a responsive website for a fictitious camera company called Fotomatic.</p>
             <p>Codecademy provided a download to the “broken code”, which included an index.html file, two CSS files, and an images folder. They also provided a <a href="https://content.codecademy.com/courses/freelance-1/capstone-1/specs/fotomatic_spec_landing_v2.png?_gl=1*ivvm51*_ga*MTg4NTk4MDE4OC4xNjY5MzAzMDg3*_ga_3LRZM6TM9L*MTY3NTM4NDMyMi43Mi4xLjE2NzUzODY3MDIuNjAuMC4w" target="_blank">spec sheet</a> to follow in making adjustments to the broken code, as well as a link to a <a href="https://content.codecademy.com/courses/freelance-1/capstone-1/solution/index.html?_gl=1*s2zuz2*_ga*MTg4NTk4MDE4OC4xNjY5MzAzMDg3*_ga_3LRZM6TM9L*MTY3NTM4NDMyMi43Mi4xLjE2NzUzODc1ODEuNjAuMC4w" target="_blank">working version</a> of the final product.</p>
@@ -30,9 +33,9 @@
             <p>1) I noticed on the <a href="https://discuss.codecademy.com/" target="_blank">forums</a> that many of my coursemates had struggled with this project, so I figured a step-by-step solution would be helpful. The final solution code provided by Codecademy also seemed to be missing several key spec sheet requirements, adding some confusion and frustration to the mix.</p>
             <p>2) Forcing myself to devise and write up a web development process seemed like a great learning opportunity.</p>
             <p>You can check out the <a href="https://user5142.github.io/Fotomatic/" target="_blank">live version</a> and <a href="https://github.com/user5142/Fotomatic" target="_blank">Github repository</a> of my project solution to go along with this article.</p>
-            <h1>Execution</h1>
+            <h2>Execution</h2>
             <p>Here is the step-by-step approach I took to debug and develop Fotomatic per the spec sheet guidelines.</p>
-            <h2>Part I: Debug</h2>
+            <h3>Part I: Debug</h3>
             <p>1) The style.css file is not linked to index.html. Add the following code to the <span>&lt;head&gt;</span> element:</p>
             <pre><code>&lt;link rel="stylesheet" href="./resources/css/style.css"&gt;</code></pre>
             <p>2) The viewport meta tag is missing from index.html. Add the following code to the <span>&lt;head&gt;</span> element:</p>
@@ -52,8 +55,8 @@
             #quotes-section .quote
             #quotes-section .quote-citation
             </code></pre>
-            <h2>Part II: Develop</h2>
-            <h2>Landing Page</h2>
+            <h3>Part II: Develop</h3>
+            <h3>Landing Page</h3>
             <p>Given the pre-assigned media queries and spec sheet guidelines, I defined the landing page (desktop) viewport for this project as screen sizes greater than 760px in width.</p>
             <p>/* Header */</p>
             <p>1) The <span>&lt;header&gt;</span> element is slightly too large (86px) and needs to be adjusted per the spec sheet to 85px. In the <span>header .content</span> ruleset, remove the padding declaration and replace it with the following:</p>
@@ -113,7 +116,7 @@
             <p>/* Footer */</p>
             <p>1) The footer media query is causing the footer text to display incorrectly (too small) for the landing page (desktop) viewport.</p>
             <p>Within the footer media query, change <span>min-width</span> to <span>max-width</span>.</p>
-            <h2>Tablet</h2>
+            <h3>Tablet</h3>
             <p>Given the pre-assigned media queries and spec sheet guidelines, I defined the tablet viewport range for this project as screen sizes between 450px - 760px in width.</p>
             <p>/* Header */</p>
             <p>1) Add a new media query within the <span>/* Header */</span> section of style.css for tablet-sized screens:</p>
@@ -182,7 +185,7 @@
             gap: 1rem;
             </code></pre>
             <p>2) Add the following rulesets within the tablet media query to style the feature image containers per the spec sheet:</p>
-            <pre><code>.feature h2 {
+            <pre><code>.feature h3 {
             &nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5rem;
             &nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.3;
             &nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;
@@ -208,7 +211,7 @@
             <pre><code>padding: 4rem 0 0 0;</code></pre>
             <p>2) Update the <span>margin-bottom</span> declaration within the <span>#filters-section .content</span> ruleset to the following:</p>
             <pre><code>margin-bottom: 4rem;</code></pre>
-            <p>3) Update the <span>font-size</span> and <span>font-weight</span> declarations within the <span>#filters-section .content h2</span> ruleset to the following:</p>
+            <p>3) Update the <span>font-size</span> and <span>font-weight</span> declarations within the <span>#filters-section .content h3</span> ruleset to the following:</p>
             <pre><code>font-size: 2rem;
             font-weight: bold;
             </code></pre>
@@ -234,7 +237,7 @@
             <pre><code>padding: 1.875rem 1.75rem;</code></pre>
             <p>/* Footer */</p>
             <p>1) The media query within the <span>/* Footer */</span> section is intended for the mobile version, but has the wrong <span>max-width</span>. Update the <span>max-width</span> from 760px to 450px, which will apply the smaller font-size to the mobile version and correct the font-size for the tablet version.</p>
-            <h2>Mobile</h2>
+            <h3>Mobile</h3>
             <p>Given the pre-assigned media queries and spec sheet guidelines, I defined the mobile viewport for this project as screen sizes smaller than 450px in width.</p>
             <p>/* Header */</p>
             <p>1) To attain the proper nav bar height per the spec sheet, adjust the <span>header .content</span> ruleset within the mobile (max-width: 450px) media query to the following: </p>
@@ -293,7 +296,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;padding: 0 1.5rem;
             &nbsp;}
                 
-            &nbsp;#filters-section .content h2 {
+            &nbsp;#filters-section .content h3 {
             &nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.25rem;
             &nbsp;}
             }
@@ -315,7 +318,7 @@
             &nbsp;}
             }
             </code></pre>
-            <h1>Insights</h1>
+            <h2>Insights</h2>
             <p>As I have done with a few other Codecademy projects, I initially jumped right into this one, guns blazing, and made some good progress, but then got stuck, spun my wheels for a bit, and ended up starting over from scratch. </p>
             <p>I have now realized through repeating this pattern a few times that getting stuck and de-railed is often a result of trying to speed through projects as fast as possible without trying to comprehend the project material.</p>
             <p>A better approach, it seems, is to slow down, think things through, and seek to understand each concept as you build and debug. Everything began to click when I committed to going slower and steadier on my second go-around.</p>
