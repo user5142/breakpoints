@@ -204,6 +204,12 @@ code {
     border-radius: 5px;
 }
 
+/* About */
+
+.about {
+    padding-bottom: 15rem;
+}
+
 /* Footer */
 
 footer {
