@@ -112,7 +112,7 @@ header ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    width: 60rem;
+    width: 85rem;
     max-width: 90%;
     margin: 0 auto;
     padding-top: 4rem;
@@ -213,6 +213,10 @@ code {
 .blog-image img {
     max-width: 100%;
     border-radius: 5px;
+}
+
+.line-break {
+    border: 1px solid #D2D3D7;
 }
 
 /* About */
